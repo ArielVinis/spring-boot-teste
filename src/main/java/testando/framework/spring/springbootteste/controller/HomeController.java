@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/")
 public class HomeController {
 
-    @GetMapping("/saudacao/{nome}")
+    @GetMapping("/{nome}")
     public String saudacao(@PathVariable String nome, ModelMap model) {
         model.addAttribute("nome", nome);
 
